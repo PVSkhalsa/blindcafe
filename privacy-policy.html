@@ -13,13 +13,13 @@
 <p>Accessible Blind Cafe is a directory of groups, channels and contacts for the blind community. It helps blind users find communities, reach them easily and collaborate with each other. This page explains what the app does with information.</p>
 <h2>Summary</h2>
 <ul>
-<li>Current versions of the app require sign-in to use the app: everyone signs in with their Google account; invited team members may instead sign in with email and password. Older versions of the app had no accounts and no sign-in. There is no advertising, no analytics and no tracking code in the app.</li>
+<li>The version of the app now on Google Play has no accounts and no sign-in: the directory works without any personal details. An upcoming version (not yet released) will require sign-in to use the app: everyone will sign in with their Google account; invited team members may instead sign in with email and password. The parts of this policy that mention sign-in, accounts, personal notifications and account deletion describe that upcoming version and apply once it is released. There is no advertising, no analytics and no tracking code in the app.</li>
 <li>On first run, the app shows a welcome screen with the app's name, the developer's name and the app's purpose, asks you to agree to this privacy policy (the box starts unticked), and asks your age group. Your age choice is stored on your phone and is not sent to the developer or anyone else.</li>
 <li>The app downloads all published directory entries (names, descriptions, audience category and contact links) from the developer's Google Firebase Firestore database over the internet, and keeps a copy on your phone so the directory loads fast.</li>
 <li>Owners can send their group or channel details to the developer with the "Register a group or channel" form, only after agreeing to the directory rules and confirming that the owner agreed to publish those details.</li>
-<li>Announcements arrive by push notification only if you allow notifications. Announcements to everyone are sent to a topic channel using Firebase Cloud Messaging; the app does not upload your device token for these. If you sign in, the app stores your device's push token with your account so the owner can send you personal notifications and in-app messages, and removes it when you sign out or delete your account. Google's privacy policy covers how Google handles tokens: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+<li>Announcements arrive by push notification only if you allow notifications. Announcements to everyone are sent to a topic channel using Firebase Cloud Messaging; the app does not upload your device token for these. In the upcoming version, if you sign in, the app stores your device's push token with your account so the owner can send you personal notifications and in-app messages, and removes it when you sign out or delete your account. Google's privacy policy covers how Google handles tokens: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
 <li>The app uses Google's Play In-App Update library to check whether an update is available and offer it. This connects to Google Play, and Google's privacy policy applies to that connection.</li>
-<li>Your choices (age group, favorites, text size, theme and your notifications list) are stored on your phone. Android automatic backup is disabled; device-maker transfer tools may behave differently. If you sign in, your account also stores your name, email address, sign-in provider, account creation time and your notification inbox in the developer's Firebase project.</li>
+<li>Your choices (age group, favorites, text size, theme and your notifications list) are stored on your phone. Android automatic backup is disabled; device-maker transfer tools may behave differently. In the upcoming version, if you sign in, your account also stores your name, email address, sign-in provider, account creation time and your notification inbox in the developer's Firebase project.</li>
 <li>Contact links (for example WhatsApp, Telegram, YouTube, phone or email) open those apps or sites. They are separate services with their own privacy policies.</li>
 </ul>
 <h2>Age-appropriate content</h2>
@@ -45,7 +45,7 @@
 </ul>
 <h2>Your account</h2>
 <ul>
-<li>The current app requires sign-in. When you sign in, the app stores your name, email address, sign-in provider (Google, or email for team members) and account creation time with your account in Firebase Authentication and Cloud Firestore. Your email address is never shown to other users.</li>
+<li>This section describes the upcoming version, which is not yet released. The upcoming version requires sign-in. When you sign in, the app stores your name, email address, sign-in provider (Google, or email for team members) and account creation time with your account in Firebase Authentication and Cloud Firestore. Your email address is never shown to other users.</li>
 <li>You can change your display name in the app's Account tab. A name can be changed at most once per month; this limit is enforced by the server, not just the app.</li>
 <li>If you are signed in, the app keeps your received personal notifications in an inbox attached to your account. Only you and the developer can read it.</li>
 <li>You can sign out at any time; signing out removes this device's push token from your account.</li>
@@ -53,11 +53,11 @@
 </ul>
 <h2>Service providers</h2>
 <ul>
-<li>The app runs on Google Firebase: Firebase Authentication handles sign-in, Cloud Firestore stores the directory, pending submissions, accounts and notification inboxes, and Firebase Cloud Messaging delivers notifications to your phone. Update checks use Google Play's In-App Update library. Access to stored data is enforced by server-side security rules: only you can read your account, tokens and inbox; the developer can read accounts only for support and deletion requests. Google's own privacy policy covers how Google processes data on these services: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+<li>The app runs on Google Firebase: Firebase Cloud Messaging delivers notifications to your phone and Cloud Firestore stores the directory and pending submissions. In the upcoming version, Firebase Authentication also handles sign-in and Cloud Firestore also stores accounts and notification inboxes. Update checks use Google Play's In-App Update library. Access to stored data is enforced by server-side security rules: only you can read your account, tokens and inbox; the developer can read accounts only for support and deletion requests. Google's own privacy policy covers how Google processes data on these services: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
 </ul>
 <h2>What stays on your phone</h2>
 <ul>
-<li>The app saves your choices on your phone: your chosen age group, your favorite entries, the text size and theme you choose, the downloaded directory copy, and the list of announcements you received. It does not send these anywhere. The Android setting "Clear storage" deletes them. This page does not cover copies a phone maker's own transfer tool may make.</li>
+<li>The app saves your choices on your phone: your chosen age group, your favorite entries, the text size and theme you choose, the downloaded directory copy, and the list of announcements you received. It does not send these anywhere. The Android setting "Clear storage" deletes them. In the upcoming version, your account also stores your notification inbox in the developer's Firebase project. This page does not cover copies a phone maker's own transfer tool may make.</li>
 </ul>
 <h2>Permissions</h2>
 <ul>
@@ -75,3 +75,4 @@
 </ul>
 </body>
 </html>
+
