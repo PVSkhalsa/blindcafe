@@ -13,7 +13,7 @@
 <p>Accessible Blind Cafe is a directory of groups, channels and contacts for the blind community. It helps blind users find communities, reach them easily and collaborate with each other. This page explains what the app does with information.</p>
 <h2>Summary</h2>
 <ul>
-<li>You can browse the directory without an account. Signing in is optional and only needed for account features (your display name, personal notifications and account management): most people sign in with Google; invited team members sign in with email and password. There is no advertising, no analytics and no tracking code in the app.</li>
+<li>Current versions of the app require sign-in to use the app: everyone signs in with their Google account; invited team members may instead sign in with email and password. Older versions of the app had no accounts and no sign-in. There is no advertising, no analytics and no tracking code in the app.</li>
 <li>On first run, the app shows a welcome screen with the app's name, the developer's name and the app's purpose, asks you to agree to this privacy policy (the box starts unticked), and asks your age group. Your age choice is stored on your phone and is not sent to the developer or anyone else.</li>
 <li>The app downloads all published directory entries (names, descriptions, audience category and contact links) from the developer's Google Firebase Firestore database over the internet, and keeps a copy on your phone so the directory loads fast.</li>
 <li>Owners can send their group or channel details to the developer with the "Register a group or channel" form, only after agreeing to the directory rules and confirming that the owner agreed to publish those details.</li>
@@ -45,11 +45,11 @@
 </ul>
 <h2>Your account</h2>
 <ul>
-<li>Signing in is optional. If you sign in, the app stores your name, email address, sign-in provider (Google, or email for team members) and account creation time with your account in Firebase Authentication and Cloud Firestore. Your email address is never shown to other users.</li>
+<li>The current app requires sign-in. When you sign in, the app stores your name, email address, sign-in provider (Google, or email for team members) and account creation time with your account in Firebase Authentication and Cloud Firestore. Your email address is never shown to other users.</li>
 <li>You can change your display name in the app's Account tab. A name can be changed at most once per month; this limit is enforced by the server, not just the app.</li>
 <li>If you are signed in, the app keeps your received personal notifications in an inbox attached to your account. Only you and the developer can read it.</li>
 <li>You can sign out at any time; signing out removes this device's push token from your account.</li>
-<li>You can delete your account at any time in the app's Account tab. Deletion removes your sign-in, profile, device tokens and notification inbox. If a deletion is interrupted (for example the connection drops), it completes automatically on your next sign-in. You can also ask the developer to delete your account using the contact route in the Contact section below; the developer deletes it from the same Firebase project.</li>
+<li>You can delete your account at any time in the app's Account tab. Deletion removes your sign-in, your profile (name and email) and this device's push token; if a deletion is interrupted (for example the connection drops), it completes automatically on your next sign-in. Remaining records attached to the deleted account (such as your notification inbox) are removed by the developer. You can also ask the developer to delete your account without using the app, using the contact route in the Contact section below.</li>
 </ul>
 <h2>Service providers</h2>
 <ul>
@@ -71,7 +71,7 @@
 </ul>
 <h2>Contact</h2>
 <ul>
-<li>For privacy questions, or to ask the developer to correct or remove a directory entry, personal details or your account, use the "Report a safety concern" option in the app's menu: it opens a prepared email to the developer's contact address on your device, and you choose whether to send it. You can also reach the developer, PVS Khalsa, using the contact email shown on the app's Google Play listing. Account deletion requests made this way are handled within 30 days.</li>
+<li>For privacy questions, or to ask the developer to correct or remove a directory entry or personal details, use the "Report a safety concern" option in the app's menu: it opens a prepared email to the developer's contact address on your device, and you choose whether to send it. You can also reach the developer, PVS Khalsa, using the contact email shown on the app's Google Play listing - this route works without the app and can be used to request account deletion.</li>
 </ul>
 </body>
 </html>
